@@ -1,0 +1,218 @@
+body{
+    margin:auto;
+    padding: 0 12% 0 12%;
+    display: flex;
+    flex-flow:column wrap;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Libre Franklin', sans-serif;
+    font-weight: 500;
+}
+h1{
+    font-size: 36px;
+    margin: 2% 12% 3% 12%;
+}
+h3{
+    line-height: 110%;
+    margin: 2px;
+}
+
+img{
+    width: 80%;
+}
+
+
+.header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 5% 1% 5%;
+}
+
+.container{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+
+}
+.cards{
+    display:inline-grid;
+    grid-template-areas: 
+    'main mid right'
+    ;
+    grid-gap: 15px;
+    display: flex;
+    flex-flow:wrap;
+    justify-content: center;
+    align-items: center;
+
+    
+    
+}
+
+.cards .div{
+    width: 900px;
+}
+
+.cards .p{
+    font-weight: 700;
+}
+
+.buymecard{
+    grid-area: main;
+    background-color:#FFDD00;
+    padding: 30px;
+    border-radius: 5%;
+}
+
+.biolinkcard{
+color: white;
+grid-area: mid;
+background:linear-gradient(.351turn,#ff5858 23.71%,#c058ff 78.8%) ;
+padding: 30px;
+border-radius: 5%;
+}
+
+.onecard{
+color: white;
+grid-area: right;
+background-color:rgba(0, 137, 123,8);
+padding: 30px;
+border-radius: 5%;
+
+}
+
+/* .cardtitle{
+    
+} */
+
+.cardsubtitle{
+    opacity: 55%;
+    font-weight: 600;
+}
+
+.buymecard .cardsubtitle{
+    color: black;
+}
+
+.content{
+    margin: 5% 10% 4% 10%;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    /* align-items: center ; */
+    font-size: 20px;
+    line-height: 30px;
+
+}
+
+
+.graphs{
+    display:inline-grid;
+    grid-template-areas: 
+    'main right'
+    ;
+    grid-gap: 50px;
+    /* margin: ; */
+    padding-bottom: 10px;
+    display: flex;
+    /* flex-flow:wrap; */
+}
+
+.graph1{
+    grid-area: main;
+    border-style: solid;
+    border-radius: 5%;
+    padding: 30px;
+}
+.graph2{
+    grid-area: right;
+    border-style: solid;
+    border-radius: 5%;
+    padding: 30px;
+}
+
+.footer{
+
+    /* display:inline-grid;
+    grid-template-areas: 
+    'main'
+    'bottom'
+    ; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column ;
+    margin-bottom: 50px;
+
+}
+
+.brew-bio{
+    /* grid-area: main; */
+    display: block;
+    font-size: 23px;
+    color: black;
+    padding: 20px;
+}
+.brew-inc{
+    /* grid-area: bottom; */
+    display: block;
+    color: grey;
+    font-size: 22px;
+}
+
+@media (max-width: 1028px) {
+    
+    body{
+        padding: 0 6% 0 6%;    }
+
+    h1{
+        margin: 2% 0% 3% 0%;
+    }
+
+.header{
+    padding: 0 0% 1% 0%;
+}
+
+.container{
+    padding-left: 0%;       
+}
+
+    .cards{
+        display:inline-grid;
+        grid-template-areas: 
+        'main' 
+        'mid' 
+        'right'
+        ;
+        grid-gap: 15px;
+        display: flex ;
+        flex-flow:column wrap;
+       padding: 1%;
+
+        justify-content:center;
+        align-items:center;
+    }
+    
+
+    .cards div{
+        display:inline;
+        margin: 3% 10% 3% 10%;
+       /* padding: auto 500% 10px 10px; */
+       margin: auto;
+    }
+
+    .graphs{
+        flex-flow: wrap;
+    }
+
+
+    #title {
+      position: static;
+      text-align: center;
+    }
+    #features{
+      position: static;
+    }
+  
+  }
